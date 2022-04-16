@@ -1,0 +1,581 @@
+{
+  "display": "6dd73c08193578940bcc59c21a961e2a",
+  "baseId": "HotSauceCreature",
+  "cost": 0.0,
+  "radius": 0.0,
+  "radiusSquared": 0.0,
+  "range": 50.0,
+  "ignoreBlockers": true,
+  "isGlobalRange": false,
+  "tier": 2,
+  "tiers": [
+    2,
+    0,
+    0
+  ],
+  "towerSet": "Support",
+  "areaTypes": [
+    2
+  ],
+  "icon": null,
+  "portrait": null,
+  "instaIcon": null,
+  "mods": [
+    {
+      "mod": "GlobalAbilityCooldowns",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "VeteranMonkeyTraining",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "MonkeyEducation",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "BetterSellDeals",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "BigBloonBlueprints",
+      "target": "LightningProj,Explosion",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "EmpoweredHeroes",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "HeroicReach",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "HeroicVelocity",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "MoreSplody",
+      "target": "Explosion",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "QuickHands",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "Scholarships",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "SelfTaughtHeroes",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    },
+    {
+      "mod": "WeakPoint",
+      "target": "",
+      "name": "GeraldoUpgrades",
+      "ImplementationType": null
+    }
+  ],
+  "ignoreTowerForSelection": true,
+  "behaviors": [
+    {
+      "name": "TowerExpireOnParentDestroyedModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpireOnParentDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "name": "CreditPopsToParentTowerModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreditPopsToParentTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "filteredTowers": [],
+      "name": "IgnoreTowersBlockerModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.IgnoreTowersBlocker, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "effectModel": {
+        "assetId": "4e33c83f3bbf7324f9704c0e21e6cbb6",
+        "scale": 1.0,
+        "lifespan": 4.0,
+        "fullscreen": false,
+        "useCenterPosition": false,
+        "useTransformPosition": false,
+        "useTransfromRotation": false,
+        "destroyOnTransformDestroy": false,
+        "alwaysUseAge": true,
+        "useRoundTime": false,
+        "name": "EffectModel_PhoenixExplosion",
+        "ImplementationType": null
+      },
+      "name": "CreateEffectOnPlaceModel_HotSauceCreatureTowerV2",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "effectModel": {
+        "assetId": "4e33c83f3bbf7324f9704c0e21e6cbb6",
+        "scale": 1.0,
+        "lifespan": 4.0,
+        "fullscreen": false,
+        "useCenterPosition": false,
+        "useTransformPosition": false,
+        "useTransfromRotation": false,
+        "destroyOnTransformDestroy": false,
+        "alwaysUseAge": true,
+        "useRoundTime": false,
+        "name": "EffectModel_PhoenixExplosion",
+        "ImplementationType": null
+      },
+      "name": "CreateEffectOnExpireModel_HotSauceCreatureTowerV2",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnExpire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "name": "SavedSubTowerModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SavedSubTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "rotationDegreesPerFrame": 1.0,
+      "radius": 12.0,
+      "ignoreRotation": false,
+      "offset": {
+        "x": 0.0,
+        "y": -10.0,
+        "Rotation": 180.0
+      },
+      "dontUseParentOrigin": false,
+      "name": "OrbitingTowerModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.OrbitingTower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "expireOnRoundComplete": false,
+      "expireOnDefeatScreen": false,
+      "lifespanFrames": 599999908,
+      "rounds": 10,
+      "Lifespan": 9999999.0,
+      "name": "TowerExpireModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.TowerExpire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "sound1": {
+        "assetId": "86d75e32d34b3de4ab05b27e4f7b0e09",
+        "name": "SoundModel_GeraldoMoabDestroyed01",
+        "ImplementationType": null
+      },
+      "sound2": {
+        "assetId": "fdd8de093d7aada45a6cf4682e9b5258",
+        "name": "SoundModel_GeraldoMoabDestroyed02",
+        "ImplementationType": null
+      },
+      "tag": "Moabs",
+      "name": "CreateSoundOnBloonDestroyedModel_HotSauceCreatureTowerV2",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnBloonDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "sound": {
+        "assetId": "df4c691ccf8a3c7408ed6f156740c8b7",
+        "name": "SoundModel_SellSound",
+        "ImplementationType": null
+      },
+      "name": "CreateSoundOnSellModel_HotSauceCreatureTowerV2",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Mutator": {
+        "id": "UseParentVisibility",
+        "isExclusiveInMutationList": false,
+        "priority": 1,
+        "glueLevel": 0,
+        "isFreeze": false,
+        "dontCopy": false,
+        "buffIndicator": null,
+        "includesSubTowers": false,
+        "saveId": null
+      },
+      "name": "UseParentVisibilityModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.UseParentVisibility, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "weapons": [
+        {
+          "animation": 1,
+          "animationOffset": 0.0,
+          "animationOffsetFrames": 0,
+          "emission": {
+            "behaviors": [
+              {
+                "useAirUnitPosition": false,
+                "dontSetAfterEmit": false,
+                "name": "EmissionRotationOffBloonDirectionModel_",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.Behaviors.EmissionRotationOffBloonDirection, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              }
+            ],
+            "name": "SingleEmissionModel_",
+            "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          },
+          "ejectX": 0.0,
+          "ejectY": 0.0,
+          "ejectZ": 0.0,
+          "projectile": {
+            "display": "b00c8d9f99d81af4d92150e44e239a79",
+            "id": "Projectile",
+            "maxPierce": 0.0,
+            "pierce": 4.0,
+            "scale": 1.0,
+            "ignoreBlockers": true,
+            "usePointCollisionWithBloons": false,
+            "canCollisionBeBlockedByMapLos": false,
+            "filters": [
+              {
+                "isActive": true,
+                "ignoreBroadPhase": false,
+                "name": "FilterInvisibleModel_",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterInvisible, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              }
+            ],
+            "behaviors": [
+              {
+                "damage": 1.0,
+                "maxDamage": 0.0,
+                "distributeToChildren": false,
+                "overrideDistributeBlocker": false,
+                "createPopEffect": true,
+                "immuneBloonProperties": 8,
+                "immuneBloonPropertiesOriginal": 8,
+                "collisionPass": 0,
+                "CappedDamage": 1.0,
+                "name": "DamageModel_Projectile_",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Damage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              },
+              {
+                "lifespanFrames": 24,
+                "speedFrames": 2.08333349,
+                "collisionPass": 0,
+                "Speed": 125.0,
+                "Lifespan": 0.4,
+                "name": "TravelStraitModel_Projectile",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.TravelStrait, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              },
+              {
+                "filters": [
+                  {
+                    "isActive": true,
+                    "ignoreBroadPhase": false,
+                    "name": "FilterInvisibleModel_",
+                    "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterInvisible, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  }
+                ],
+                "collisionPass": 0,
+                "name": "ProjectileFilterModel_Projectile",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.ProjectileFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              },
+              {
+                "mutationId": "Dot:Mortar",
+                "lifespan": 3.1,
+                "layers": 9999999,
+                "lifespanFrames": 185,
+                "filter": null,
+                "filters": null,
+                "behaviors": [
+                  {
+                    "damage": 3.0,
+                    "payloadCount": 0,
+                    "immuneBloonProperties": 8,
+                    "intervalFrames": 89,
+                    "displayPath": null,
+                    "displayLifetime": 3.1,
+                    "triggerImmediate": false,
+                    "rotateEffectWithBloon": false,
+                    "initialDelay": 0.0,
+                    "initialDelayFrames": 0,
+                    "damageOnDestroy": false,
+                    "overrideDistributionBlocker": false,
+                    "damageModifierModels": null,
+                    "Interval": 1.5,
+                    "name": "DamageOverTimeModel_Dot:Mortar",
+                    "ImplementationType": "Assets.Scripts.Simulation.Bloons.Behaviors.DamageOverTime, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                  }
+                ],
+                "isUnique": true,
+                "lastAppliesFirst": false,
+                "collideThisFrame": true,
+                "cascadeMutators": true,
+                "glueLevel": 0,
+                "applyOnlyIfDamaged": true,
+                "stackCount": 0,
+                "overlayType": "Fire",
+                "collisionPass": -1,
+                "name": "AddBehaviorToBloonModel_",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AddBehaviorToBloon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              },
+              {
+                "tag": "Ceramic",
+                "tags": [
+                  "Ceramic"
+                ],
+                "damageMultiplier": 1.0,
+                "damageAddative": 1.0,
+                "mustIncludeAllTags": false,
+                "applyOverMaxDamage": false,
+                "collisionPass": 0,
+                "name": "DamageModifierForTagModel_Projectile",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.DamageModifierForTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              },
+              {
+                "display": "b00c8d9f99d81af4d92150e44e239a79",
+                "layer": 0,
+                "positionOffset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "MagnitudeSquared": 0.0,
+                  "Magnitude": 0.0,
+                  "Rotation": 0.0,
+                  "SimToDispRotation": 180.0
+                },
+                "scale": 1.0,
+                "ignoreRotation": false,
+                "animationChanges": null,
+                "delayedReveal": 0.0,
+                "name": "DisplayModel_ProjectileDisplay",
+                "ImplementationType": "Assets.Scripts.Simulation.Behaviors.DisplayBehavior, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+              }
+            ],
+            "collisionPasses": [
+              -1,
+              0
+            ],
+            "canCollideWithBloons": true,
+            "radius": 6.0,
+            "vsBlockerRadius": 0.0,
+            "hasDamageModifiers": true,
+            "dontUseCollisionChecker": false,
+            "checkCollisionFrames": 0,
+            "ignoreNonTargetable": false,
+            "ignorePierceExhaustion": false,
+            "saveId": null,
+            "CappedPierce": 4.0,
+            "name": "ProjectileModel_Projectile",
+            "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Projectile, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          },
+          "rateFrames": 5,
+          "fireWithoutTarget": false,
+          "fireBetweenRounds": false,
+          "behaviors": null,
+          "useAttackPosition": false,
+          "startInCooldown": false,
+          "customStartCooldown": 0.0,
+          "customStartCooldownFrames": 0,
+          "animateOnMainAttack": false,
+          "isStunned": false,
+          "Rate": 0.1,
+          "UseThrowMarker": false,
+          "name": "WeaponModel_Weapon",
+          "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        }
+      ],
+      "behaviors": [
+        {
+          "filters": [
+            {
+              "isActive": true,
+              "ignoreBroadPhase": false,
+              "name": "FilterInvisibleModel_",
+              "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterInvisible, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            }
+          ],
+          "name": "AttackFilterModel_",
+          "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.AttackFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        {
+          "radius": 0.0,
+          "isSelectable": true,
+          "reverse": true,
+          "display": null,
+          "displayCount": 0,
+          "isOnSubTower": true,
+          "name": "CirclePatternFirstModel_",
+          "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.CirclePatternFirst, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        {
+          "radius": 0.0,
+          "isSelectable": true,
+          "reverse": true,
+          "display": null,
+          "displayCount": 0,
+          "isOnSubTower": true,
+          "name": "CirclePatternLastModel_",
+          "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.CirclePatternLast, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        {
+          "radius": 0.0,
+          "isSelectable": true,
+          "reverse": true,
+          "display": null,
+          "displayCount": 0,
+          "isOnSubTower": true,
+          "name": "CirclePatternCloseModel_",
+          "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.CirclePatternClose, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        {
+          "radius": 0.0,
+          "isSelectable": true,
+          "reverse": true,
+          "display": null,
+          "displayCount": 0,
+          "isOnSubTower": true,
+          "name": "CirclePatternStrongModel_",
+          "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.CirclePatternStrong, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+        }
+      ],
+      "range": 50.0,
+      "targetProvider": {
+        "radius": 0.0,
+        "isSelectable": true,
+        "reverse": true,
+        "display": null,
+        "displayCount": 0,
+        "isOnSubTower": true,
+        "name": "CirclePatternFirstModel_",
+        "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.CirclePatternFirst, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+      },
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "offsetZ": 0.0,
+      "attackThroughWalls": true,
+      "fireWithoutTarget": false,
+      "framesBeforeRetarget": 0,
+      "addsToSharedGrid": false,
+      "sharedGridRange": 0.0,
+      "name": "AttackModel_Attack_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Attack, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "display": "6dd73c08193578940bcc59c21a961e2a",
+      "layer": -1,
+      "positionOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "MagnitudeSquared": 0.0,
+        "Magnitude": 0.0,
+        "Rotation": 0.0,
+        "SimToDispRotation": 180.0
+      },
+      "scale": 1.0,
+      "ignoreRotation": false,
+      "animationChanges": null,
+      "delayedReveal": 0.0,
+      "name": "DisplayModel_TowerDisplay",
+      "ImplementationType": "Assets.Scripts.Simulation.Behaviors.DisplayBehavior, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ],
+  "footprint": {
+    "radius": 0.0,
+    "doesntBlockTowerPlacement": false,
+    "ignoresPlacementCheck": false,
+    "ignoresTowerOverlap": false,
+    "name": "CircleFootprintModel_Circle Footprint",
+    "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CircleFootprint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+  },
+  "dontDisplayUpgrades": true,
+  "emoteSpriteSmall": null,
+  "emoteSpriteLarge": null,
+  "doesntRotate": false,
+  "upgrades": [],
+  "appliedUpgrades": [],
+  "targetTypes": [
+    {
+      "id": "First",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 0
+    },
+    {
+      "id": "Last",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 1
+    },
+    {
+      "id": "Close",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 2
+    },
+    {
+      "id": "Strong",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 3
+    }
+  ],
+  "paragonUpgrade": null,
+  "isSubTower": true,
+  "isBakable": false,
+  "powerName": null,
+  "showPowerTowerBuffs": false,
+  "animationSpeed": 1.0,
+  "towerSelectionMenuThemeId": "Default",
+  "ignoreCoopAreas": false,
+  "canAlwaysBeSold": false,
+  "blockSelling": false,
+  "isParagon": false,
+  "ignoreMaxSellPercent": false,
+  "isStunned": false,
+  "geraldoItemName": "BottleHotSauce",
+  "sellbackModifierAdd": 0.0,
+  "skinName": null,
+  "isPowerTower": false,
+  "isGeraldoItem": true,
+  "IsBaseTower": false,
+  "TargetTypes": [
+    {
+      "id": "First",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 0
+    },
+    {
+      "id": "Last",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 1
+    },
+    {
+      "id": "Close",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 2
+    },
+    {
+      "id": "Strong",
+      "isActionable": false,
+      "actionOnCreate": false,
+      "intID": 3
+    }
+  ],
+  "name": "HotSauceCreatureTowerV2",
+  "ImplementationType": "Assets.Scripts.Simulation.Towers.Tower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+}
